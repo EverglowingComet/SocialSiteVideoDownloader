@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C07900032250904700CC39ED /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07900022250904700CC39ED /* VideoTableViewCell.swift */; };
+		C07900062251464B00CC39ED /* TweetDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07900052251464B00CC39ED /* TweetDownloader.swift */; };
+		C07900082251465F00CC39ED /* TweetVideoFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07900072251465F00CC39ED /* TweetVideoFetcher.swift */; };
+		C079000A2251468800CC39ED /* TweetUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07900092251468800CC39ED /* TweetUtils.swift */; };
+		C079000C2251469500CC39ED /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C079000B2251469500CC39ED /* Utils.swift */; };
+		C0790010225149F700CC39ED /* AddVideoAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C079000F225149F700CC39ED /* AddVideoAlertView.swift */; };
+		C0790012225150F500CC39ED /* AddVideoViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0790011225150F500CC39ED /* AddVideoViewDelegate.swift */; };
 		C079FFF1225078C900CC39ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C079FFF0225078C900CC39ED /* AppDelegate.swift */; };
 		C079FFF3225078C900CC39ED /* VideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C079FFF2225078C900CC39ED /* VideoListViewController.swift */; };
 		C079FFF6225078C900CC39ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C079FFF4225078C900CC39ED /* Main.storyboard */; };
@@ -20,6 +26,12 @@
 		130BECF359656634A4835257 /* Pods-TwitterVideoDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterVideoDownloader.debug.xcconfig"; path = "Target Support Files/Pods-TwitterVideoDownloader/Pods-TwitterVideoDownloader.debug.xcconfig"; sourceTree = "<group>"; };
 		1C509DBB1C87270661B3A81A /* Pods-TwitterVideoDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterVideoDownloader.release.xcconfig"; path = "Target Support Files/Pods-TwitterVideoDownloader/Pods-TwitterVideoDownloader.release.xcconfig"; sourceTree = "<group>"; };
 		C07900022250904700CC39ED /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		C07900052251464B00CC39ED /* TweetDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDownloader.swift; sourceTree = "<group>"; };
+		C07900072251465F00CC39ED /* TweetVideoFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetVideoFetcher.swift; sourceTree = "<group>"; };
+		C07900092251468800CC39ED /* TweetUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetUtils.swift; sourceTree = "<group>"; };
+		C079000B2251469500CC39ED /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		C079000F225149F700CC39ED /* AddVideoAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVideoAlertView.swift; sourceTree = "<group>"; };
+		C0790011225150F500CC39ED /* AddVideoViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVideoViewDelegate.swift; sourceTree = "<group>"; };
 		C079FFED225078C900CC39ED /* TwitterVideoDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterVideoDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C079FFF0225078C900CC39ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C079FFF2225078C900CC39ED /* VideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewController.swift; sourceTree = "<group>"; };
@@ -64,8 +76,21 @@
 			children = (
 				C079FFF2225078C900CC39ED /* VideoListViewController.swift */,
 				C07900022250904700CC39ED /* VideoTableViewCell.swift */,
+				C079000F225149F700CC39ED /* AddVideoAlertView.swift */,
+				C0790011225150F500CC39ED /* AddVideoViewDelegate.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C079000E2251474800CC39ED /* TweetUtils */ = {
+			isa = PBXGroup;
+			children = (
+				C07900052251464B00CC39ED /* TweetDownloader.swift */,
+				C07900072251465F00CC39ED /* TweetVideoFetcher.swift */,
+				C07900092251468800CC39ED /* TweetUtils.swift */,
+				C079000B2251469500CC39ED /* Utils.swift */,
+			);
+			path = TweetUtils;
 			sourceTree = "<group>";
 		};
 		C079FFE4225078C900CC39ED = {
@@ -90,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				C079FFF0225078C900CC39ED /* AppDelegate.swift */,
+				C079000E2251474800CC39ED /* TweetUtils */,
 				C07900042251124300CC39ED /* Views */,
 				C079FFF4225078C900CC39ED /* Main.storyboard */,
 				C079FFF7225078C900CC39ED /* Assets.xcassets */,
@@ -248,7 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07900082251465F00CC39ED /* TweetVideoFetcher.swift in Sources */,
+				C079000A2251468800CC39ED /* TweetUtils.swift in Sources */,
+				C0790012225150F500CC39ED /* AddVideoViewDelegate.swift in Sources */,
+				C07900062251464B00CC39ED /* TweetDownloader.swift in Sources */,
+				C079000C2251469500CC39ED /* Utils.swift in Sources */,
 				C079FFF3225078C900CC39ED /* VideoListViewController.swift in Sources */,
+				C0790010225149F700CC39ED /* AddVideoAlertView.swift in Sources */,
 				C079FFF1225078C900CC39ED /* AppDelegate.swift in Sources */,
 				C07900032250904700CC39ED /* VideoTableViewCell.swift in Sources */,
 			);
@@ -284,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B425UL339A;
 				INFOPLIST_FILE = TwitterVideoDownloader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +336,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B425UL339A;
 				INFOPLIST_FILE = TwitterVideoDownloader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
