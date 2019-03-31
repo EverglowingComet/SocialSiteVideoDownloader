@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C07900032250904700CC39ED /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07900022250904700CC39ED /* VideoTableViewCell.swift */; };
+		C079FFF1225078C900CC39ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C079FFF0225078C900CC39ED /* AppDelegate.swift */; };
+		C079FFF3225078C900CC39ED /* VideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C079FFF2225078C900CC39ED /* VideoListViewController.swift */; };
+		C079FFF6225078C900CC39ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C079FFF4225078C900CC39ED /* Main.storyboard */; };
+		C079FFF8225078C900CC39ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C079FFF7225078C900CC39ED /* Assets.xcassets */; };
+		C079FFFB225078C900CC39ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C079FFF9225078C900CC39ED /* LaunchScreen.storyboard */; };
+		CB27C4D9C62205A10FEB152C /* Pods_TwitterVideoDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D1D9418C6B7921F920D631 /* Pods_TwitterVideoDownloader.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		130BECF359656634A4835257 /* Pods-TwitterVideoDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterVideoDownloader.debug.xcconfig"; path = "Target Support Files/Pods-TwitterVideoDownloader/Pods-TwitterVideoDownloader.debug.xcconfig"; sourceTree = "<group>"; };
+		1C509DBB1C87270661B3A81A /* Pods-TwitterVideoDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterVideoDownloader.release.xcconfig"; path = "Target Support Files/Pods-TwitterVideoDownloader/Pods-TwitterVideoDownloader.release.xcconfig"; sourceTree = "<group>"; };
+		C07900022250904700CC39ED /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		C079FFED225078C900CC39ED /* TwitterVideoDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterVideoDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C079FFF0225078C900CC39ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C079FFF2225078C900CC39ED /* VideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewController.swift; sourceTree = "<group>"; };
+		C079FFF5225078C900CC39ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C079FFF7225078C900CC39ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C079FFFA225078C900CC39ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C079FFFC225078C900CC39ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0D1D9418C6B7921F920D631 /* Pods_TwitterVideoDownloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterVideoDownloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C079FFEA225078C900CC39ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB27C4D9C62205A10FEB152C /* Pods_TwitterVideoDownloader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11D450320190BB2CEC70A6EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0D1D9418C6B7921F920D631 /* Pods_TwitterVideoDownloader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31D1334D49BED80B41F42719 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				130BECF359656634A4835257 /* Pods-TwitterVideoDownloader.debug.xcconfig */,
+				1C509DBB1C87270661B3A81A /* Pods-TwitterVideoDownloader.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C07900042251124300CC39ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C079FFF2225078C900CC39ED /* VideoListViewController.swift */,
+				C07900022250904700CC39ED /* VideoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C079FFE4225078C900CC39ED = {
+			isa = PBXGroup;
+			children = (
+				C079FFEF225078C900CC39ED /* TwitterVideoDownloader */,
+				C079FFEE225078C900CC39ED /* Products */,
+				31D1334D49BED80B41F42719 /* Pods */,
+				11D450320190BB2CEC70A6EB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C079FFEE225078C900CC39ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C079FFED225078C900CC39ED /* TwitterVideoDownloader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C079FFEF225078C900CC39ED /* TwitterVideoDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				C079FFF0225078C900CC39ED /* AppDelegate.swift */,
+				C07900042251124300CC39ED /* Views */,
+				C079FFF4225078C900CC39ED /* Main.storyboard */,
+				C079FFF7225078C900CC39ED /* Assets.xcassets */,
+				C079FFF9225078C900CC39ED /* LaunchScreen.storyboard */,
+				C079FFFC225078C900CC39ED /* Info.plist */,
+			);
+			path = TwitterVideoDownloader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C079FFEC225078C900CC39ED /* TwitterVideoDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C079FFFF225078C900CC39ED /* Build configuration list for PBXNativeTarget "TwitterVideoDownloader" */;
+			buildPhases = (
+				BC2E7302F5A77D090D25DC36 /* [CP] Check Pods Manifest.lock */,
+				C079FFE9225078C900CC39ED /* Sources */,
+				C079FFEA225078C900CC39ED /* Frameworks */,
+				C079FFEB225078C900CC39ED /* Resources */,
+				B01D75F8CA10B1288B5EC107 /* [CP] Embed Pods Frameworks */,
+				FCFD18D02126CBF07C9B1A66 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitterVideoDownloader;
+			productName = TwitterVideoDownloader;
+			productReference = C079FFED225078C900CC39ED /* TwitterVideoDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C079FFE5225078C900CC39ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = SmoothAce;
+				TargetAttributes = {
+					C079FFEC225078C900CC39ED = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = C079FFE8225078C900CC39ED /* Build configuration list for PBXProject "TwitterVideoDownloader" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C079FFE4225078C900CC39ED;
+			productRefGroup = C079FFEE225078C900CC39ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C079FFEC225078C900CC39ED /* TwitterVideoDownloader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C079FFEB225078C900CC39ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C079FFFB225078C900CC39ED /* LaunchScreen.storyboard in Resources */,
+				C079FFF8225078C900CC39ED /* Assets.xcassets in Resources */,
+				C079FFF6225078C900CC39ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B01D75F8CA10B1288B5EC107 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwitterVideoDownloader/Pods-TwitterVideoDownloader-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HUD/HUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwitterVideoDownloader/Pods-TwitterVideoDownloader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC2E7302F5A77D090D25DC36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwitterVideoDownloader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCFD18D02126CBF07C9B1A66 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TwitterVideoDownloader/Pods-TwitterVideoDownloader-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TwitterVideoDownloader/Pods-TwitterVideoDownloader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C079FFE9225078C900CC39ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C079FFF3225078C900CC39ED /* VideoListViewController.swift in Sources */,
+				C079FFF1225078C900CC39ED /* AppDelegate.swift in Sources */,
+				C07900032250904700CC39ED /* VideoTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C079FFF4225078C900CC39ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C079FFF5225078C900CC39ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C079FFF9225078C900CC39ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C079FFFA225078C900CC39ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0790000225078C900CC39ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 130BECF359656634A4835257 /* Pods-TwitterVideoDownloader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B425UL339A;
+				INFOPLIST_FILE = TwitterVideoDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ace.media.TwitterVideoDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0790001225078C900CC39ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C509DBB1C87270661B3A81A /* Pods-TwitterVideoDownloader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B425UL339A;
+				INFOPLIST_FILE = TwitterVideoDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ace.media.TwitterVideoDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C079FFFD225078C900CC39ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C079FFFE225078C900CC39ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C079FFE8225078C900CC39ED /* Build configuration list for PBXProject "TwitterVideoDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C079FFFD225078C900CC39ED /* Debug */,
+				C079FFFE225078C900CC39ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C079FFFF225078C900CC39ED /* Build configuration list for PBXNativeTarget "TwitterVideoDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0790000225078C900CC39ED /* Debug */,
+				C0790001225078C900CC39ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C079FFE5225078C900CC39ED /* Project object */;
+}
