@@ -8,6 +8,8 @@
 
 import UIKit
 import HUD
+import AVFoundation
+import AVKit
 
 class VideoListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     private var video_url: String = ""
@@ -40,6 +42,7 @@ class VideoListViewController: UIViewController, UITableViewDataSource, UITableV
         }
         return cell
     }
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             if let item = video_list?.videoItems[indexPath.row] {
@@ -53,6 +56,20 @@ class VideoListViewController: UIViewController, UITableViewDataSource, UITableV
             }
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let item = video_list?.videoItems[indexPath.row] {
+            let videoURL = URL(fileURLWithPath: item.file_path)
+            let player = AVPlayer(url: videoURL)
+            let vc = AVPlayerViewController()
+            vc.player = player
+            
+            present(vc, animated: true) {
+                vc.player?.play()
+            }
+        }
+    }
+    
     func updateVideoList() {
         video_list = VideoDirectory(dir: "tweet")
         table_view.reloadData()
