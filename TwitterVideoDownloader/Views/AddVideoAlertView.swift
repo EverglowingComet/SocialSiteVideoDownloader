@@ -14,6 +14,7 @@ class AddVideoAlertView: UIViewController {
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var alertTextField: UITextField!
     @IBOutlet weak var alertView: UIView!
+    @IBOutlet weak var alertViewCenterY: NSLayoutConstraint!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var okButton: UIButton!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -22,7 +23,7 @@ class AddVideoAlertView: UIViewController {
     var selectedOption = "Twitter"
     let alertViewGrayColor = UIColor(red: 224.0/255.0, green: 224.0/255.0, blue: 224.0/255.0, alpha: 1)
     
-    var title: String = "Add Video"
+    var title_str: String = "Add Video"
     var message: String = "Select the site of url and input to the input view below."
     var option1: String = "Twitter"
     var option2: String = "Instagram"
@@ -30,6 +31,8 @@ class AddVideoAlertView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         alertTextField.becomeFirstResponder()
+        NotificationCenter.default.addObserver(self, selector: #selector(AddVideoAlertView.keyBoardUp(Notification :)), name: UIViewController.keyboardDidShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(AddVideoAlertView.keyBoardDown(Notification :)), name: UIViewController.keyboardDidHideNotification, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,9 +44,18 @@ class AddVideoAlertView: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         view.layoutIfNeeded()
-        cancelButton.addBorder(side: .Top, color: alertViewGrayColor, width: 1)
-        cancelButton.addBorder(side: .Right, color: alertViewGrayColor, width: 1)
-        okButton.addBorder(side: .Top, color: alertViewGrayColor, width: 1)
+        cancelButton.layer.borderColor = alertViewGrayColor.cgColor
+        cancelButton.layer.borderWidth = 1
+        okButton.layer.borderColor = alertViewGrayColor.cgColor
+        okButton.layer.borderWidth = 1
+    }
+    
+    @objc func keyBoardUp( Notification: NSNotification){
+        alertViewCenterY.constant = -120
+    }
+    
+    @objc func keyBoardDown( Notification: NSNotification){
+        alertViewCenterY.constant = 0
     }
     
     func updateMessages(title: String, message: String, option1: String, option2: String) {
@@ -58,10 +70,10 @@ class AddVideoAlertView: UIViewController {
         alertView.layer.cornerRadius = 15
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
         
-        titleLabel.text = title
+        titleLabel.text = title_str
         messageLabel.text = message
-        segmentedControl.titleForSegment(at: 0) = option1
-        segmentedControl.titleForSegment(at: 1) = option2
+        segmentedControl.setTitle(option1, forSegmentAt: 0)
+        segmentedControl.setTitle(option2, forSegmentAt: 1)
     }
     
     func animateView() {
@@ -89,11 +101,11 @@ class AddVideoAlertView: UIViewController {
         switch sender.selectedSegmentIndex {
         case 0:
             print("First option")
-            selectedOption = segmentedControl.titleForSegment(at: 0)
+            selectedOption = segmentedControl.titleForSegment(at: 0)!
             break
         case 1:
             print("Second option")
-            selectedOption = segmentedControl.titleForSegment(at: 1)
+            selectedOption = segmentedControl.titleForSegment(at: 1)!
             break
         default:
             break

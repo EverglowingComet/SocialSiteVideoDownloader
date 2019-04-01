@@ -1,5 +1,6 @@
 PODS:
   - HUD (2.0.1)
+  - NicooM3u8Downloader (0.1.2)
   - SwiftSoup (1.7.4)
   - TwitterCore (3.2.0)
   - TwitterKit (3.4.2):
@@ -7,22 +8,25 @@ PODS:
 
 DEPENDENCIES:
   - HUD
+  - NicooM3u8Downloader
   - SwiftSoup
   - TwitterKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - HUD
+    - NicooM3u8Downloader
     - SwiftSoup
     - TwitterCore
     - TwitterKit
 
 SPEC CHECKSUMS:
   HUD: 08e61fa44e2573dd88407ade83a526b9e95e7284
+  NicooM3u8Downloader: 97d7068d367a29775e9d65898af06d6fa060d271
   SwiftSoup: 92f5b348c131aed8af04f4326db1579ab19fa08c
   TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
   TwitterKit: 5e4f41d70b9abdb41df5467f52d7aa2c0fd26ebb
 
-PODFILE CHECKSUM: 5fd7e8bcdc150ed277840a7d6997571c8e64cfa7
+PODFILE CHECKSUM: ca12bd9a8017e6f0b8ce0e097a050eb9e5aa00d6
 
 COCOAPODS: 1.6.1

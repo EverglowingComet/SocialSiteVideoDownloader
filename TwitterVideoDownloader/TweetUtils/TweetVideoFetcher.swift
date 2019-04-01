@@ -9,12 +9,13 @@
 import Foundation
 import SwiftSoup
 
-class TweetVideoFetcher {
+class TweetVideoFetcher: NSObject {
     var video_url: String
     var delegate: TweetVideoFetcherDelegate?
     
-    init(url: String) {
+    init(url: String, delegate: TweetVideoFetcherDelegate) {
         video_url = url
+        self.delegate = delegate
     }
     
     func startVideoDownlaod() -> String {
@@ -98,8 +99,8 @@ class TweetVideoFetcher {
                 if let result = String(data: data!, encoding: String.Encoding.utf8) {
                     if let json_result = TweetUtils.parseJSONstr(str: result, field: "track", subfield: "playbackUrl") {
                         print(json_result, TweetUtils.ism3u8URL(url: json_result))
-                        //self.delegate?.videoLinkFetched(by: self, link: json_result)
-                        self.parseM3U8info(url: json_result)
+                        self.delegate?.videoLinkFetched(by: self, link: json_result)
+                        //self.parseM3U8info(url: json_result)
                     } else if let json_result = TweetUtils.parseJSONstr(str: result, field: "track", subfield: "vmapUrl") {
                         self.parseMP4info(url: json_result)
                         
